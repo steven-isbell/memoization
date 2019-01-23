@@ -53,6 +53,8 @@ fibMemo(5);
 // calculated with 4
 // pulling from cache with 2
 // pulling from cache with 3
+fibMemo(5); // entire sequence has already been cached, no calculation
+fibMemo(6); // calculated with 6, 5 and below were pulled from the cache
 
 // Because fibonacci will examine some numbers more than once,
 // we can retrieve the values that have already been calculated from the cache.
